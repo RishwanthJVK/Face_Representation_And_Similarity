@@ -1,7 +1,7 @@
 # Face_Representation_And_Similarity
 Developed a lightweight pipeline using PCA and t-SNE for dimensionality reduction and visualization of face data. Implemented KMeans, Agglomerative, and DBSCAN clustering, evaluated with ARI/NMI metrics. Built a cosine similarity–based retrieval system with precision@k evaluation, enabling face verification without deep learning.
 
-## Features
+## Workflow
 Load and preprocess the LFW dataset
 
 Exploratory Data Analysis (EDA) with sample images and class distributions
@@ -16,24 +16,6 @@ Similarity checking & retrieval using cosine similarity on PCA features
 
 Precision@k evaluation for retrieval performance
 
-
-## Usage
-
-Run the notebook locally (the dataset is automatically downloaded via sklearn.datasets.fetch_lfw_people).
-
-## workflow:
-
-Load dataset with customizable filters (min_faces_per_person, resize)
-
-Perform PCA → visualize eigenfaces
-
-Run t-SNE → visualize 2D clusters
-
-Apply clustering algorithms → compare ARI & NMI metrics
-
-Retrieve similar faces via cosine similarity
-
-Evaluate retrieval using Precision@k
 
 ## Output
 
@@ -53,4 +35,3 @@ Explore metric learning approaches (PCA + LDA, pairwise metric learning)
 
 Analyze demographic balance & cluster purity
 
-Extend to larger datasets or integrate with deep learning methods
